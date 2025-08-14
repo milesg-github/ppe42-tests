@@ -9,6 +9,8 @@ The ppe42-tests Makefile expects gcc and the binutils to be installed in the sam
 
 Once you have GCC and binutils installed, you should be able to `cd` into the `ppe42-tests` repo and run `make`.  This will create a `ppe42-test.out` file in the `./build` directory.
 
+NOTE: A prebuilt image is provided in the `./images` directory.
+
 # How to run in QEMU
 Assuming you have a version of QEMU that supports running the `ppe42_machine`, you should be able to load the code and run it using the following QEMU command line:
 ```
