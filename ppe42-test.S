@@ -35,6 +35,9 @@ sys_reset:
 
 
 .org __vectors + 0x200
+test_SUCCESS:
+    b .
+
 test_LSKU:
     _liwa %r28, 0x28282828
     _liwa %r29, 0x29292929
@@ -998,6 +1001,6 @@ test_main:
     bl test_RLDICL
     bl test_RLDICR
     bl test_RLDIMI
-    b .
+    b test_SUCCESS
 
 .end
